@@ -1,0 +1,67 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+    background-color: #111111;
+}
+.bgimage {
+    position: relative;
+    background-size: cover;
+    background: url("jumbotron.jpg") no-repeat center;
+    height: 100%;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    font-size: x-large;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.caption span.border {
+    background-color: #111;
+    color: aliceblue;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+.button{
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #FFFFFF;
+    margin: 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family: Arial;
+    font-weight:300;
+    color: gainsboro;
+    text-align:center;
+    transition: all 0.2s;
+}
+.button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+}
+@media only screen and (max-width: 999px) {
+    .caption {
+        position: absolute;
+        left: 0;
+        top: 20%;
+        width: 100%;
+        text-align: center;
+        color: #000;
+    }
+    .button {
+        height: 50px;
+        margin-top: 15px;
+        width: 95%;
+        font-size: larger;
+        text-align: center;
+        line-height: 150%;
+        padding: 0;
+    }
+}
